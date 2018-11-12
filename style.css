@@ -1,0 +1,36 @@
+ #chess {
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ #header {
+     display: grid;
+     grid-template-columns: repeat(10, 50px);
+ }
+ 
+ #chessboard {
+     display: grid;
+     grid-template-columns: repeat(10, 50px);
+ }
+ 
+ #footer {
+     display: grid;
+     grid-template-columns: repeat(10, 50px);
+ }
+ 
+ .chessboard {
+     border: 0.5px solid #000;
+     height: 50px;
+     width: 50px;
+ }
+ 
+ .borders {
+     border: 0.5px solid #000;
+     height: 50px;
+     width: 50px;
+     background-color: whitesmoke;
+ }
+ 
+ .black {
+     background-color: black;
+ }

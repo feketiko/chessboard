@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шахматули</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function randForColor() {
+                return Math.round(Math.random() * 255);
+            }
+            var chessboard = $('#chess')
+
+            $(chessboard).on('mouseenter', '.chessboard', function(event) {
+                if (!$(this).hasClass('borders')) {
+                    var r = randForColor();
+                    var b = randForColor();
+                    var g = randForColor();
+
+                    $(this).css('background-color', 'rgb(' + r + ',' + g + ',' + b + ')')
+
+                }
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+    <div id="chess">
+        <div id="header">
+            <div class="borders"></div>
+            <div class="borders">a</div>
+            <div class="borders">b</div>
+            <div class="borders">c</div>
+            <div class="borders">d</div>
+            <div class="borders">e</div>
+            <div class="borders">f</div>
+            <div class="borders">g</div>
+            <div class="borders">h</div>
+            <div class="borders"></div>
+        </div>
+        <div id="chessboard">
+            <div class="borders">8</div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="borders">1</div>
+
+        </div>
+        <div id="chessboard">
+            <div class="borders">7</div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="borders">2</div>
+
+        </div>
+        <div id="chessboard">
+            <div class="borders">6</div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="borders">3</div>
+
+        </div>
+        <div id="chessboard">
+            <div class="borders">5</div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="borders">4</div>
+        </div>
+        <div id="chessboard">
+            <div class="borders">4</div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="borders">5</div>
+        </div>
+        <div id="chessboard">
+            <div class="borders">3</div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="borders">6</div>
+        </div>
+        <div id="chessboard">
+            <div class="borders">2</div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard "></div>
+            <div class="borders">7</div>
+        </div>
+        <div id="chessboard">
+            <div class="borders">1</div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="chessboard"></div>
+            <div class="chessboard black"></div>
+            <div class="borders">8</div>
+        </div>
+        <div id="footer">
+            <div class="borders"></div>
+            <div class="borders">h</div>
+            <div class="borders">g</div>
+            <div class="borders">f</div>
+            <div class="borders">e</div>
+            <div class="borders">d</div>
+            <div class="borders">c</div>
+            <div class="borders">b</div>
+            <div class="borders">a</div>
+            <div class="borders"></div>
+        </div>
+    </div>
+
+
+
+    <body>
+
+</html>
